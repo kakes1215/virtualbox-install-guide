@@ -16,6 +16,8 @@
     <li>Emacs</li>
     <li>Gnu Plot</li>
     <li><b>Extra Software</b></li>
+    <li>IntelliJ</li>
+    <li>Eclipse</li>
     <li>Make Project Build System</li>
     <li>Vim</li>
     <li>Gedit</li>
@@ -56,9 +58,34 @@
         <li>Click <code>Next</code></li>
         <li>Now choose the size for the new drive. For this tutorial, you should probably give yourself 20GB</li>
         <li>Click <code>Create</code></li>
-
-
-
+        <li>Go to <code>System</code> and then <code>Processor</code> and reserve CPU cores for your virtual machine. If you have at least 4 CPU cores then reserve 2 for the VM</li>
+    </ol>
+</div>
+<div class="installUbuntu">
+    <h2>Install Ubuntu</h2>
+    <p>We are now going to use the .iso file you downloaded in the Getting Started section to install Ubuntu on your empty virtual machine</p>
+    <ol>
+        <li>Click the <code>Settings</code> button</li>
+        <li>Click the small blue circle icon to the right of first storage device (it should say Adds optical drive when you hover over it)</li>
+        <li>Click <code>Choose Disk</code> and then <code>Add</code>. Find your .iso file and select it</li>
+        <li>Click <code>OK</code></li>
+        <li>You should now see your .iso file listed under the storage device. Remove any other empty devices if applicable</li>
+        <li>Return to the main VirtualBox window and click the <code>Start</code> button</li>
+        <li>Follow the prompts to install Ubuntu. If you need more instructions on how to do this use the following link: <a href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0">https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0</a></li>
+        <p><b>*NOTE: Do not worry about warnings of erasing your whole disk. The VM only knows about the drive you created and not your actual computer drive.</b></p>
+        <li>After Ubuntu finishes installing, let it reboot and hit Enter if prompted to do so</li>
+        <li>Your Ubuntu installation is now up and running.</li>
+        <li>Login into your Ubuntu installation and open a Terminal from the launch menu (lower left corner).</li>
+        <li>Type in the following two commands:</li>
+        <pre>
+            <code>
+                sudo apt-get update
+                sudo apt-get upgrade
+            </code>
+        </pre>
+        <li><code>sudo</code> is a Linux command that will run the command with administrator privileges and will require your password.</li>
+        <li><code>apt-get</code> is a Linux program that will update software or install/uninstall packages</li>
+        <li>So the above commands will first get the information about what updates are available and then update your computer based on that information</li>
     </ol>
 </div>
 </body>
