@@ -3,30 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>VirtualBox Installation Guide</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <h1>VirtualBox Installation Guide</h1>
-<p>These instructions will help you create a virtual Ubuntu computer and will also tell you how to install common software packages</p>
-<ul> This tutorial will install the following technologies:
-    <li><b>Necessary Software</b></li>
-    <li>VirtualBox</li>
-    <li>Ubuntu</li>
-    <li><b>Requested Software</b></li>
-    <li>C++ Compiler</li>
-    <li>Emacs</li>
-    <li>Gnu Plot</li>
-    <li><b>Extra Software</b></li>
-    <li>IntelliJ</li>
-    <li>Eclipse</li>
-    <li>Make Project Build System</li>
-    <li>Vim</li>
-    <li>Gedit</li>
-    <li>Chrome</li>
-    <li>Maven</li>
-    <li>Oracle SQL Developer</li>
-    <li>Git</li>
-</ul>
-
+<p style="text-align: center;">These instructions will help you create a virtual Ubuntu computer and will also tell you how to install common software packages</p>
+<div class="software">
+    <h2>This tutorial will install the following technologies:</h2>
+    <table align="center">
+        <tr>
+            <th>Required Software</th>
+            <th>Requested Software</th>
+            <th>Extra Software</th>
+        </tr>
+        <tr>
+            <td>VirtualBox</td>
+            <td>C++ Compiler</td>
+            <td>IntelliJ</td>
+        </tr>
+        <tr>
+            <td>Ubuntu</td>
+            <td>Emacs</td>
+            <td>Vim</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Gnu Plot</td>
+            <td>Gedit</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Chrome</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Maven</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Oracle SQL Developer</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Git</td>
+        </tr>
+    </table>
+</div>
 <div class="systemRequirements">
     <h2>System Requirements</h2>
 </div>
@@ -87,6 +113,77 @@
         <li><code>apt-get</code> is a Linux program that will update software or install/uninstall packages</li>
         <li>So the above commands will first get the information about what updates are available and then update your computer based on that information</li>
     </ol>
+</div>
+<div class="installSoftware">
+    <h2>Install Software</h2>
+    <p>We are now going to install software that you may need for you Ubuntu machine</p>
+
+    <!--li><b>Extra Software</b></li>
+    <li>Maven</li>
+    <li>Oracle SQL Developer</li>
+    <li>Git</li-->
+    <h3>C++ Compiler</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt-get install g++</code></pre>
+    <p>Verify it is installed correctly by typing in the following:</p>
+    <pre><code>g++ --version</code></pre>
+    <p>Make sure it responds with an identifying message making clear that the software is installed and running</p>
+
+    <h3>Emacs</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt-get install emacs</code></pre>
+
+    <h3>Gnu Plot</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt-get install gnuplot</code></pre>
+    <p>Verify it is installed correctly by typing in the following:</p>
+    <pre><code>which gnuplot</code></pre>
+    <p>Make sure it responds with an identifying message making clear that the software is installed and running</p>
+
+    <h3>Gnu Plot</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt-get install gnuplot</code></pre>
+    <p>Verify it is installed correctly by typing in the following:</p>
+    <pre><code>which gnuplot</code></pre>
+    <p>Make sure it responds with an identifying message making clear that the software is installed and running</p>
+
+    <h3>Intellij</h3>
+    <p>Install IntelliJ by following the instructions in the following link: <a href="https://www.javahelps.com/2015/04/install-intellij-idea-on-ubuntu.html">https://www.javahelps.com/2015/04/install-intellij-idea-on-ubuntu.html</a> </p>
+
+    <h3>Vim</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt-get install vim</code></pre>
+
+    <h3>Gedit</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt install gedit</code></pre>
+
+    <h3>Google Chrome</h3>
+    <p>Use the following commands: </p>
+    <pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</code></pre>
+    <pre><code>sudo dpkg -i google-chrome-stable_current_amd64.deb</code></pre>
+
+    <h3>Maven</h3>
+    <p>Use the following link: <a href="https://www.javahelps.com/2017/10/install-apache-maven-on-linux.html">https://www.javahelps.com/2017/10/install-apache-maven-on-linux.html</a></p>
+
+    <h3>SQL Developer</h3>
+    <ol>
+        <li>Download a JDK <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">here</a></li>
+        <li>Install the package with the following command: </li>
+        <pre><code>rpm -Uhv sqldeveloper-(build number)-1.noarch.rpm</code></pre>
+        <li>Go to the sqldeveloper directory:</li>
+        <pre><code>cd sqldeveloper </code></pre>
+        <li>Run the sqldeveloper file</li>
+        <pre><code>./sqldeveloper.sh</code></pre>
+        <li>Put in the path to the JDK that you downloaded at the beginning</li>
+        <li>SQL Developer will now launch automatically.</li>
+    </ol>
+
+    <h3>Git</h3>
+    <p>Use the following command: </p>
+    <pre><code>sudo apt install git</code></pre>
+
+
 </div>
 </body>
 </html>
